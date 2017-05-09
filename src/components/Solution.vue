@@ -1,6 +1,6 @@
 <template>
   <div>
-     {{msg}}
+   {{msg}}
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-      msg: '首页'
+      msg: '解决方案'
     }
   }
 }
