@@ -6,6 +6,11 @@ import router from './router'
 
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+
+//使用light 主题
+import 'muse-ui/dist/theme-light.css'
+
+//自定义样式
 import './assets/css/style.css'
 
 Vue.use(MuseUI)

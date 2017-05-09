@@ -1,6 +1,6 @@
 <template>
-	<div>
-	  <mu-paper>
+	<div class="container">
+	  <mu-paper class="fixed-top">
 		  <mu-bottom-nav :value="bottomNav" @change="handleChange">
 		    <mu-bottom-nav-item value="home" title="首页" icon="home" to="/home" />
 		    <mu-bottom-nav-item value="solution" title="解决方案" icon="favorite" to="/solution" />
@@ -31,5 +31,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.fixed-top {
+	position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 </style>

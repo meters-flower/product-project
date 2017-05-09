@@ -3,7 +3,7 @@
     <div class="mobile-tear-sheet-container" :style="{'height': height}">
       <slot></slot>
     </div>
-    <img class="mobile-tear-sheet-bottom-tear" src="../assets/images/bottom-tear.svg" />
+<!--     <img class="mobile-tear-sheet-bottom-tear" src="../assets/images/bottom-tear.svg" /> -->
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .mobile-tear-sheet {
-  margin: 0 auto 24px;
+  margin: 56px auto 0;
   max-width: 360px;
   width: 100%;
 }
@@ -30,10 +30,10 @@ export default {
   overflow: hidden;
 }
 
-.mobile-tear-sheet-bottom-tear {
+/*.mobile-tear-sheet-bottom-tear {
   display: block;
   position: relative;
-  margin-top: -10;
-  max-width: 360;
-}
+  margin-top: -10px;
+  max-width: 360px;
+}*/
 </style>

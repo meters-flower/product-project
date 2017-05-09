@@ -1,15 +1,19 @@
 <template>
-  <div>
+  <mobile-tear-sheet>
    {{msg}}
-  </div>
+  </mobile-tear-sheet>
 </template>
 
 <script>
+import mobileTearSheet  from './mobileTearSheet'
 export default {
   data () {
     return {
       msg: '解决方案'
     }
+  },
+  components: {
+    mobileTearSheet
   }
 }
 </script>
