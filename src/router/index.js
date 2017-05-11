@@ -36,17 +36,33 @@ export default new Router({
 
     /* 示例二 */
     {
-      path: '/test',
+      path: '/mobile',
       component: require('@/components/Mobile'),
     },   
+    {
+      path: 'recharge',
+      component: require('@/components/Recharge')
+    },
     {
       path: '/productList',
       component: require('@/components/ProductList')      
     },   
+    {
+      path: '/readMore',
+      component: require('@/components/ReadDetail')
+    },
+    {
+      path: '/userSetting',
+      component: require('@/components/UserSetting')
+    },
+    {
+      path: '/modPwd',
+      component: require('@/components/ModPwd')
+    },
 
     {
       path: '*',
-      redirect: '/'
+      redirect: '/mobile'
     }
   ]
 })

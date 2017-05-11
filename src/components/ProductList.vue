@@ -3,7 +3,7 @@
   	<!-- 标题栏 -->
 	  <mu-appbar title="商品列表" class="fixed-top-1">
 		  <mu-icon-button icon="keyboard_arrow_left" slot="left" @click="comeBack"/>
-		  <mu-icon-button icon="assignment" slot="right"/>
+		  <mu-icon-button icon="shopping_basket" slot="right"/>
 		</mu-appbar>
 		
 		<!-- 商品选项卡 -->
@@ -17,7 +17,7 @@
 			      <img :src="tile.image"/>
 			      <span slot="title">{{tile.title}}</span>
 			      <span slot="subTitle">by <b>{{tile.author}}</b></span>
-			      <mu-icon-button icon="star_border" slot="action" to=""/>
+			      <mu-icon-button icon="star_border" slot="action" to="/readMore"/>
 		    </mu-grid-tile>
 		  </mu-grid-list>
 		</div>	  
@@ -46,22 +46,27 @@ export default {
     	activeTab: 'tab1',
       bottomNav: 'shopping',
       list: [{
+      	id: '0001',
         image: '../static/images/product/img1.jpg',
         title: 'Breakfast',
         author: 'Myron'
       }, {
+      	id: '0002',
         image: '../static/images/product/img2.jpg',
         title: 'Burger',
         author: 'Linyu'
       }, {
+      	id: '0003',      	
         image: '../static/images/product/img3.jpg',
         title: 'Camera',
         author: 'ruolin'
       }, {
+      	id: '0004',
         image: '../static/images/product/img4.jpg',
         title: 'Hats',
         author: 'kakali'
       }, {
+      	id: '0005',
         image: '../static/images/product/img5.jpg',
         title: 'Honey',
         author: 'yuyang'

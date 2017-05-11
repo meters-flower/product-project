@@ -4,7 +4,7 @@
 			<!-- 个人信息 -->
 	    <mu-flexbox-item class="user-wrap">
 	    	<mu-raised-button @click="openBottomSheet" class="user-bg" />
-	      <a href="#"><img src="../assets/images/mobile/user-img.jpg" alt="头像" class="use-setting"></a>
+	      <router-link to="/userSetting"><img src="../assets/images/mobile/user-img.jpg" alt="头像" class="use-setting"></router-link>
 	    </mu-flexbox-item>
 
 	    <mu-flexbox-item grow="0" shrink="0">
@@ -129,18 +129,12 @@ export default {
     height: 60px;
     background-color: #eee;
 	}
-	.circle-1 {
-
-	}
 	.swiper-container {
 		margin: 0 10px 10px;
 	}
 	.swiper-slide {
 		height: 30vh;
 		background-color: #eee;
-	}
-	.center {
-		text-align: center;
 	}
 </style>
 
