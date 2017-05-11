@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>测试</title>
-	<style type="text/css">
-   div{
-   	background-color: #eee;
-     height: calc(100vh - 100px);     
-    }
-	</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title></title>
+  <meta charset="utf-8" />
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  header,footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+    border-bottom: 1px solid #999;
+  }
+  .main {
+    flex: 1; //占满剩余空间，=flex: 1 1 auto;
+    position: relative;
+
+  }
+
+  .panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+  }
+  </style>
 </head>
 <body>
-	<div></div>
+  <div class="wrap">
+    <header>头部</header>
+    <div class="main">
+      <div class="panel">
+           <p>父容器position:relative;</p>
+           <p>子元素position:absolute;  width: 100%; height:100%;</p>
+      </div>
+    </div>
+  <footer>底部</footer>
+  </div>
 </body>
 </html>

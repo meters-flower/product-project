@@ -56,7 +56,7 @@ export default {
 		background-position:center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(../assets/images/home/bg.jpg)
+		background-image: url(../assets/images/home/bg.jpg);
 	}
 	.down {
 		animation: tipmove 1.5s infinite ease-in-out;

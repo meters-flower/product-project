@@ -4,7 +4,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
+    /* 示例一 */
     {
       path: '/',
       component: require('@/components/Page'),
@@ -31,10 +33,17 @@ export default new Router({
         }
       ]
     },
+
+    /* 示例二 */
     {
       path: '/test',
-      component: require('@/components/Product')
-    },        
+      component: require('@/components/Mobile'),
+    },   
+    {
+      path: '/productList',
+      component: require('@/components/ProductList')      
+    },   
+
     {
       path: '*',
       redirect: '/'

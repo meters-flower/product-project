@@ -1,6 +1,6 @@
-# resume
+# product-project
 
-> Muse-UI + vue 在线简历
+> Muse-UI + vue 简单实例
 
 ## Build Setup
 
