@@ -10,27 +10,23 @@ export default new Router({
     {
       path: '/web',
       component: require('@/components/Page'),
-      children: [
-        {
-          path: '/home',
-          component: require('@/components/Home')
-        },             
+      children: [            
         {
           path: '/product',
           component: require('@/components/Product')
         },
         {
-          path: '/productDetail',
-          component: require('@/components/ProductDetail')
-        },
-        {
           path: '/',
-          redirect: '/home'
+          redirect: '/product'
         }
       ]
     },
 
     /* 示例二 */
+    {
+      path: '/',
+      component: require('@/components/Ad')
+    },
     {
       path: '/mobile',
       component: require('@/components/Mobile'),
@@ -66,7 +62,7 @@ export default new Router({
 
     {
       path: '*',
-      redirect: '/mobile'
+      redirect: '/'
     }
   ]
 })

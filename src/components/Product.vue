@@ -2,7 +2,7 @@
 	<mobile-tear-sheet>
 	  <mu-list>
 	    <mu-sub-header>嵌入式物联网</mu-sub-header>
-	    <mu-list-item title="物联网感知实验平台" to="/productDetail">
+	    <mu-list-item title="物联网感知实验平台">
 	      <mu-avatar src="/static/images/img2.jpg" slot="leftAvatar"/>
 	      <span slot="describe">
 	         物联网感知实验平台是一套针对物联网相关专业展开基于Zigbee的网络教学研究而而开发的系统，及行业应用推出的模块化实验平台

@@ -2,7 +2,7 @@
 	<div class="container">
 	  <mu-paper class="fixed-top">
 		  <mu-bottom-nav :value="bottomNav" @change="handleChange">
-		    <mu-bottom-nav-item value="home" title="首页" icon="home" to="/home" />
+		    <mu-bottom-nav-item value="home" title="首页" icon="home" />
 		    <mu-bottom-nav-item value="solution" title="解决方案" icon="favorite" />
 		    <mu-bottom-nav-item value="product" title="产品中心" icon="book_open_page_variant" to="/product"/>
 		  </mu-bottom-nav>
