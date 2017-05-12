@@ -1,9 +1,29 @@
+html {
+  overflow-y: hidden;
+}
 .center {
 	text-align: center;
+}
+.bg-while {
+	background-color: #fff;
+}
+
+.m-top-56 {
+	margin-top: 56px;
 }
 .img-responsive {
 	display: block;	
 	margin: 0 auto;	
 	max-width: 100%;
 	height: auto; 
+}
+
+.fixed-top-1 {
+	position: fixed;
+	top: 0;
+}
+.fixed-bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }

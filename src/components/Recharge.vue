@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="m-top-56">
   	<mu-appbar title="充值" class="fixed-top-1">
 		  <mu-icon-button icon="keyboard_arrow_left" slot="left" @click="comeBack"/>
 		</mu-appbar>
-
-		<img src="/static/images/recharge-bg.jpg" alt="宣传广告" class="img-responsive">
-
 	  <mu-flexbox orient="vertical" class="recharge-wrap">
+	  	<mu-flexbox-item grow="0" shrink="0">
+				<img src="/static/images/recharge-bg.jpg" alt="宣传广告" class="img-responsive">
+	    </mu-flexbox-item>
 	    <mu-flexbox-item grow="0" shrink="0" class="center">
 	    	<mu-text-field hintText="请输入卡号"/>
 	    </mu-flexbox-item>
@@ -31,17 +31,17 @@
 			  </mu-stepper>
 	    </mu-flexbox-item>
 
-		  <mu-flexbox-item class="btn-list">
-		  	<mu-raised-button label="20元" class="demo-btn"/>
-		  	<mu-raised-button label="30元" class="demo-btn"/>
-		  	<mu-raised-button label="50元" class="demo-btn"/>
-		  	<mu-raised-button label="100元" class="demo-btn"/>
-		  	<mu-raised-button label="200元" class="demo-btn"/>
+		  <mu-flexbox-item>
+		  	<mu-raised-button label="20元" class="demo-btn" to="/payment"/>
+		  	<mu-raised-button label="30元" class="demo-btn" to="/payment"/>
+		  	<mu-raised-button label="50元" class="demo-btn" to="/payment"/>
+		  	<mu-raised-button label="100元" class="demo-btn" to="/payment"/>
+		  	<mu-raised-button label="200元" class="demo-btn" to="/payment"/>
 	    </mu-flexbox-item>
 
 			<mu-flexbox-item grow="0" shrink="0" class="other-btn">	    
-			  	<mu-raised-button label="充值网点" icon="speaker_notes" iconClass="icon"/>
-			  	<mu-raised-button label="充值记录" icon="contact_mail" iconClass="icon"/>		
+			  	<mu-raised-button label="充值网点" icon="speaker_notes"/>
+			  	<mu-raised-button label="充值记录" icon="contact_mail"/>		
 			</mu-flexbox-item>	  
 		</mu-flexbox>
 
@@ -64,24 +64,23 @@ export default {
 </script>
 <style scoped>
   .recharge-wrap {
-  	height: calc(100vh - 150px);
-    background-color: #eee;  	
+  	height: calc(100vh - 56px);
+    background-color: #eee; 
+    overflow-y: auto; 	
   }
-	.btn-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-  }
-  .btn-list .demo-btn {
+  .demo-btn {
     margin: 6px 20px;
+    color: #ff4081;
+  }
+  .demo-btn:hover {
+  	border: 1px solid #ff4081;
   }
   .other-btn {
   	margin-bottom: 10px;
   	text-align: center;
   }
-  .other-btn .icon {
-  	color: orange;
+  .mu-step-label {
+		height: inherit;
   }
 
 </style>

@@ -14,11 +14,7 @@ export default new Router({
         {
           path: '/home',
           component: require('@/components/Home')
-        },        
-        {
-          path: '/solution',
-          component: require('@/components/Solution')
-        },        
+        },             
         {
           path: '/product',
           component: require('@/components/Product')
@@ -44,6 +40,10 @@ export default new Router({
       component: require('@/components/Recharge')
     },
     {
+      path: '/payment',
+      component: require('@/components/Payment')
+    },
+    {
       path: '/productList',
       component: require('@/components/ProductList')      
     },   
@@ -51,6 +51,10 @@ export default new Router({
       path: '/readMore',
       component: require('@/components/ReadDetail')
     },
+    {
+      path: '/moreDetail',
+      component: require('@/components/MoreDetail')
+    },    
     {
       path: '/userSetting',
       component: require('@/components/UserSetting')

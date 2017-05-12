@@ -1,6 +1,6 @@
 <template>
   <div>
-  	<mu-appbar title="修改密码" class="fixed-top-1">
+  	<mu-appbar title="修改密码">
 		  <mu-icon-button icon="keyboard_arrow_left" slot="left" @click="comeBack"/>
 		</mu-appbar> 
 

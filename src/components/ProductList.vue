@@ -6,12 +6,21 @@
 		  <mu-icon-button icon="shopping_basket" slot="right"/>
 		</mu-appbar>
 		
-		<!-- 商品选项卡 -->
-		<mu-tabs :value="activeTab" @change="handleTabChange" class="fixed-top-2">
-	    <mu-tab value="tab1" title="全部" class="color-666"/>
-	    <mu-tab value="tab2" title="更新日期从早到晚"  class="color-666"/>
-	  </mu-tabs>
-		<div  v-if="activeTab === 'tab1'" class="gridlist-demo-container">
+		<!-- 商品列表 -->
+		<mu-flexbox  class="fixed-top-2">
+	    <mu-flexbox-item>
+	      全部
+	    </mu-flexbox-item>
+	    <mu-flexbox-item>
+		    <mu-dropDown-menu :value="menuValue" @change="menuChange">
+			    <mu-menu-item value="1" title="日期从早到晚"/>
+			    <mu-menu-item value="2" title="日期从晚到早"/>
+			    <mu-menu-item value="3" title="价格从高到低"/>
+			    <mu-menu-item value="4" title="价格从低到高"/>
+			  </mu-dropDown-menu>
+	    </mu-flexbox-item>
+	  </mu-flexbox>
+		<div class="gridlist-demo-container">
 		  <mu-grid-list class="gridlist-demo">
 		    <mu-grid-tile v-for="tile, index in list" :key="index">
 			      <img :src="tile.image"/>
@@ -20,13 +29,7 @@
 			      <mu-icon-button icon="star_border" slot="action" to="/readMore"/>
 		    </mu-grid-tile>
 		  </mu-grid-list>
-		</div>	  
-	  <div v-if="activeTab === 'tab2'">
-	    <h2>Tab Two</h2>
-	    <p>
-	      这是第二个 tab
-	    </p>
-	  </div>
+		</div>	
 
 		<!-- 底部导航栏 -->
 	  <mu-paper class="fixed-bottom">
@@ -43,7 +46,7 @@
 export default {
   data () {
     return {
-    	activeTab: 'tab1',
+    	menuValue: '1',
       bottomNav: 'shopping',
       list: [{
       	id: '0001',
@@ -77,36 +80,25 @@ export default {
   	comeBack() {
   		this.$router.go(-1);
   	},
-  	handleTabChange (val) {
-      this.activeTab = val
-    },
   	handleNavChange (val) {
       this.bottomNav = val
+    },
+    menuChange(val) {
+    	this.menuValue = val;
     }
   }
 }
 </script>
 <style scoped>
-	html {
-		overflow-y: hidden;
-	}
 	.container {
 		margin-bottom: 56px;
 		margin-top: 112px;
 	}
-	.fixed-bottom {
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-	}
-	.fixed-top-1 {
-		position: fixed;
-		top: 0;
-	}
+
 	.fixed-top-2 {
 		position: fixed;
-		top: 56px;		
-		background-color: #fff;
+    top: 64px;
+    text-align: center;
 	}
 	.color-666 {
 		color: #666;

@@ -1,6 +1,6 @@
 <template>
   <div>
-  	<mu-appbar title="个人信息" class="fixed-top-1">
+  	<mu-appbar title="个人信息">
 		  <mu-icon-button icon="keyboard_arrow_left" slot="left" @click="comeBack"/>
 		</mu-appbar>
 
@@ -20,6 +20,10 @@
 	      <mu-icon slot="right" value="keyboard_arrow_right"/>
 	    </mu-list-item>
 	  </mu-list>
+
+		<div class="center">
+	  	<mu-raised-button label="退出登录" secondary/>			
+		</div>
 
 	  <mu-bottom-sheet :open="bottomSheet" @close="closeBottomSheet">
 	    <mu-list @itemClick="closeBottomSheet" class="center">
