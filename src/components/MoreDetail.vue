@@ -32,7 +32,7 @@ export default {
 }
 </script>
 <style scoped>
-  .detail-wrap .content {
+  .content {
 		padding: 30px;
   }
 </style>
