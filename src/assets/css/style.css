@@ -7,10 +7,17 @@ html {
 .bg-while {
 	background-color: #fff;
 }
+.bg-eee {
+	 background-color: #eee; 
+}
 
 .m-top-56 {
 	margin-top: 56px;
 }
+.p-top-20 {
+	padding-top: 20px;
+}
+
 .img-responsive {
 	display: block;	
 	margin: 0 auto;	
@@ -26,4 +33,9 @@ html {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+.wrapper-default {
+	height: calc(100vh - 56px);
+  overflow-y: auto; 
 }

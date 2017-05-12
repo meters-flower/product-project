@@ -3,7 +3,7 @@
   	<mu-appbar title="充值" class="fixed-top-1">
 		  <mu-icon-button icon="keyboard_arrow_left" slot="left" @click="comeBack"/>
 		</mu-appbar>
-	  <mu-flexbox orient="vertical" class="recharge-wrap">
+	  <mu-flexbox orient="vertical" class="wrapper-default bg-eee">
 	  	<mu-flexbox-item grow="0" shrink="0">
 				<img src="/static/images/recharge-bg.jpg" alt="宣传广告" class="img-responsive">
 	    </mu-flexbox-item>
@@ -63,11 +63,6 @@ export default {
 }
 </script>
 <style scoped>
-  .recharge-wrap {
-  	height: calc(100vh - 56px);
-    background-color: #eee; 
-    overflow-y: auto; 	
-  }
   .demo-btn {
     margin: 6px 20px;
     color: #ff4081;

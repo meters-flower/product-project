@@ -31,11 +31,9 @@ export default {
   		this.$router.go(-1);
   	},
   	isRequiredOld() {
-  		console.log('old blur');
   		this.oldErr = this.oldPwd === '' ? '必填项': '';
   	},
   	isRequiredNew() {
-  		console.log('new blur');
 			this.newErr = this.newPwd === '' ? '必填项': '';
   	}, 
   	isEqual() {

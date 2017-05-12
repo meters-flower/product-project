@@ -6,23 +6,6 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
-    /* 示例一 */
-    {
-      path: '/web',
-      component: require('@/components/Page'),
-      children: [            
-        {
-          path: '/product',
-          component: require('@/components/Product')
-        },
-        {
-          path: '/',
-          redirect: '/product'
-        }
-      ]
-    },
-
-    /* 示例二 */
     {
       path: '/',
       component: require('@/components/Ad')
@@ -50,7 +33,15 @@ export default new Router({
     {
       path: '/moreDetail',
       component: require('@/components/MoreDetail')
-    },    
+    },   
+    {
+      path: '/login',
+      component: require('@/components/Login')
+    }, 
+    {
+      path: '/signup',
+      component: require('@/components/Signup')
+    },     
     {
       path: '/userSetting',
       component: require('@/components/UserSetting')
