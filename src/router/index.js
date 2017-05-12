@@ -8,7 +8,7 @@ export default new Router({
   routes: [
     /* 示例一 */
     {
-      path: '/',
+      path: '/web',
       component: require('@/components/Page'),
       children: [
         {
@@ -40,7 +40,7 @@ export default new Router({
       component: require('@/components/Mobile'),
     },   
     {
-      path: 'recharge',
+      path: '/recharge',
       component: require('@/components/Recharge')
     },
     {

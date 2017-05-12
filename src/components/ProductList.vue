@@ -31,7 +31,7 @@
 		<!-- 底部导航栏 -->
 	  <mu-paper class="fixed-bottom">
 	    <mu-bottom-nav :value="bottomNav" @change="handleNavChange">
-	      <mu-bottom-nav-item value="shopping" title="购卡商城" icon="shopping_cart"/>
+	      <mu-bottom-nav-item value="shopping" title="购卡商城" icon="store"/>
 	      <mu-bottom-nav-item value="DIY" title="DIY" icon="photo"/>
 	      <mu-bottom-nav-item value="me" title="我的" icon="person_outline"/>	      
 	    </mu-bottom-nav>

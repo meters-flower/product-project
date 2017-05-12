@@ -11,7 +11,7 @@
 	    	<!-- 界面功能菜单 -->
 	    	<mu-flexbox>
 	    		<mu-flexbox-item>	
-	    			<mu-paper class="paper-circle circle-1" circle :zDepth="2" />
+	    			<router-link to="/recharge"><mu-paper class="paper-circle circle-1" circle :zDepth="2"/></router-link>
 	    		</mu-flexbox-item>	    		
 	    		<mu-flexbox-item>	
 	    			<router-link to="/productList"><mu-paper class="paper-circle circle-2" circle :zDepth="2" /></router-link>
